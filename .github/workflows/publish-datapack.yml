@@ -1,0 +1,56 @@
+name: Publish datapack release
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Zip datapack
+        run: |
+          # pack.mcmeta must be at the zip root
+          (cd datapack && zip -qr ../SneakyWorldGen.zip .)
+          unzip -l SneakyWorldGen.zip | head -20
+
+      - name: Publish rolling latest release
+        if: github.ref == 'refs/heads/main'
+        uses: ncipollo/release-action@v1
+        with:
+          tag: latest
+          name: Latest datapack
+          body: |
+            Automatic datapack build from `main`.
+
+            **Commit:** ${{ github.sha }}
+            **Message:** ${{ github.event.head_commit.message }}
+          artifacts: SneakyWorldGen.zip
+          artifactContentType: application/zip
+          allowUpdates: true
+          replacesArtifacts: true
+          makeLatest: true
+          omitBodyDuringUpdate: false
+          omitNameDuringUpdate: false
+
+      - name: Publish versioned release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref_name }}
+          name: SneakyWorldGen ${{ github.ref_name }}
+          body: |
+            Datapack release **${{ github.ref_name }}**.
+
+            **Commit:** ${{ github.sha }}
+          artifacts: SneakyWorldGen.zip
+          artifactContentType: application/zip
+          makeLatest: true
+          generateReleaseNotes: true
