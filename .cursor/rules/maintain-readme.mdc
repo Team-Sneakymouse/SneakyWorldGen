@@ -1,0 +1,22 @@
+---
+description: Keep README.md accurate when project-facing details change
+alwaysApply: true
+---
+
+# Maintain README
+
+When you change anything a user or contributor would notice, update `README.md` in the same change (do not wait to be asked).
+
+## Update when
+
+- Adding, renaming, or removing a world preset / generator
+- Changing install steps, `level-type` IDs, or pack format / Minecraft target
+- Changing local test script, VS Code tasks, or release workflow behavior
+- Changing adventure biome whitelist policy or other documented design intent
+- Changing repo layout that the README describes
+
+## Do not
+
+- Paste long biome lists into the README when a tag/file path already documents them — link the file instead
+- Rewrite the whole README for a small change; edit only the affected sections
+- Add marketing fluff or unrelated docs
