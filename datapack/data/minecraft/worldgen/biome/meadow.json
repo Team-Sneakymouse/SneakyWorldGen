@@ -87,7 +87,9 @@
       "minecraft:patch_grass_meadow",
       "minecraft:flower_meadow",
       "minecraft:trees_meadow",
+      "sneakyworldgen:adventure/vegetation/trees/meadow_firs",
       "sneakyworldgen:adventure/vegetation/forest_bushes",
+      "sneakyworldgen:adventure/vegetation/meadow_flowers_dense",
       "minecraft:wildflowers_meadow"
     ],
     [

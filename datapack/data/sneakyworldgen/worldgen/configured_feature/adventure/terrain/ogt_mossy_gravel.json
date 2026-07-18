@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:moss_block"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:gravel"
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:gravel",
+        "minecraft:cobblestone",
+        "minecraft:stone",
+        "minecraft:andesite",
+        "minecraft:coarse_dirt"
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 3
+    },
+    "half_height": 1
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:cobblestone"
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:dirt",
+            "minecraft:grass_block",
+            "minecraft:coarse_dirt",
+            "minecraft:clay",
+            "minecraft:sand"
+          ]
+        },
+        {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                1,
+                0,
+                0
+              ],
+              "fluids": "minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                -1,
+                0,
+                0
+              ],
+              "fluids": "minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                1
+              ],
+              "fluids": "minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                -1
+              ],
+              "fluids": "minecraft:water"
+            }
+          ]
+        }
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 5
+    },
+    "half_height": 1
+  }
+}

@@ -1,23 +1,23 @@
 {
   "type": "minecraft:random_selector",
   "config": {
-    "default": "minecraft:spruce_checked",
+    "default": "sneakyworldgen:adventure/vegetation/trees/huge_spruce_checked",
     "features": [
+      {
+        "chance": 0.2,
+        "feature": "sneakyworldgen:adventure/vegetation/trees/cathedral_spruce_checked"
+      },
       {
         "chance": 0.45,
         "feature": "sneakyworldgen:adventure/vegetation/trees/huge_spruce_checked"
       },
       {
-        "chance": 0.2,
-        "feature": "sneakyworldgen:adventure/vegetation/trees/huge_pine_checked"
-      },
-      {
-        "chance": 0.2,
+        "chance": 0.15,
         "feature": "minecraft:mega_spruce_checked"
       },
       {
-        "chance": 0.0125,
-        "feature": "minecraft:fallen_spruce_tree"
+        "chance": 0.1,
+        "feature": "minecraft:spruce_checked"
       }
     ]
   }

@@ -25,6 +25,7 @@
     [
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/moss_floor",
+      "sneakyworldgen:adventure/terrain/jungle_floor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -78,8 +79,9 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:bamboo_light",
-      "sneakyworldgen:adventure/vegetation/trees/jungle_canopy",
+      "sneakyworldgen:adventure/vegetation/trees/jungle_lowland",
+      "sneakyworldgen:adventure/vegetation/trees/jungle_midland",
+      "sneakyworldgen:adventure/vegetation/trees/jungle_upland",
       "sneakyworldgen:adventure/vegetation/dense_ferns",
       "sneakyworldgen:adventure/vegetation/fern_carpet",
       "sneakyworldgen:adventure/vegetation/rainforest_vines",

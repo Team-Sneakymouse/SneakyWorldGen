@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "sneakyworldgen:adventure/vegetation/trees/alpine_spruce_checked",
+    "features": [
+      {
+        "chance": 0.55,
+        "feature": "sneakyworldgen:adventure/vegetation/trees/alpine_spruce_checked"
+      },
+      {
+        "chance": 0.25,
+        "feature": "sneakyworldgen:adventure/vegetation/trees/dwarf_spruce_checked"
+      },
+      {
+        "chance": 0.1,
+        "feature": "minecraft:oak_checked"
+      }
+    ]
+  }
+}

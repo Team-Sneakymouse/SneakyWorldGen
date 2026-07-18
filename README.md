@@ -34,6 +34,11 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Fallen logs + forest bushes on wooded biomes
 - Dark forest mud floor + huge/dense fungi; pale garden eerie floor/moss/hanging moss + sparse oaks
 - Glacial ice spikes (blue ice, scree, grass islands, denser spikes); erratic stone piles (meadow/taiga/grove/etc.)
+- Savanna highland kit (packed-mud crust, woodland/sparse acacia, tussock grass)
+- Wilder rivers (gravel bars, bank grass, gallery oaks)
+- Jungle elevation banding (lowland canopy → midland → upland scrub) + jungle floor
+- Meadow fir pockets + denser wildflowers
+- OGT muddy-roots / mossy-gravel floor; cathedral mega-conifers in old-growth taiga
 - Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
 - Biome overrides (feature wiring + sky/foliage/water polish)
 
