@@ -17,14 +17,15 @@ Custom noise settings, single biome, grass surface. Tuned for building, not expl
 
 ### Adventure
 
-Vanilla overworld terrain for now, with a **whitelisted** multi-noise biome set: green lowlands, highlands/peaks, jungles, savannas, rivers/coasts, warm ocean, and all cave biomes (including sulfur caves). Lifeless biomes (deserts, badlands, most other oceans, plains/forest fillers, etc.) are removed so climate niches fill from nearby kept biomes.
+Custom **amplified-based** terrain (`sneakyworldgen:adventure` noise settings) with taller peaks, deeper valleys, and extra jaggedness — plus a **whitelisted** multi-noise biome set: green lowlands, highlands/peaks, jungles, savannas, rivers/coasts, warm ocean, and all cave biomes (including sulfur caves). Lifeless biomes (deserts, badlands, most other oceans, plains/forest fillers, etc.) are removed so climate niches fill from nearby kept biomes.
 
 Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json`](datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json)
 
-**Direction**: epic mega-tree forests, cliff/scree on highlands, wilder river banks, biome color polish, and sparse ruined roads as a hint of long-abandoned civilization. Custom noise for mountain drama comes later.
+**Direction**: epic mega-tree forests, cliff/scree on highlands, wilder river banks, biome color polish, and sparse ruined roads as a hint of long-abandoned civilization.
 
 **In pack now**
-- Terrain: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
+- Noise: `sneakyworldgen:adventure` (amplified peaks; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)
+- Terrain features: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
 - Highland andesite recolor; peak de-snowify + lee-side shadow snow
 - Moss floor + dense fern understory + rainforest vines (OGT, jungle, dark forest)
 - Alpine tree-line banding (low/mid/high spruce) on taiga, snowy taiga, grove, windswept forest
@@ -83,7 +84,8 @@ datapack/
     tags/worldgen/biome/adventure.json
     worldgen/
       world_preset/<generator>.json
-      noise_settings/<generator>.json    # plot today; adventure uses vanilla for now
+      noise_settings/<generator>.json    # plot + adventure
+      density_function/adventure/…       # adventure terrain shape
       biome/…
       density_function/<generator>/…
 ```
