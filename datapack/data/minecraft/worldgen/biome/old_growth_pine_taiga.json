@@ -27,6 +27,7 @@
       "sneakyworldgen:adventure/terrain/moss_floor",
       "sneakyworldgen:adventure/terrain/ogt_muddy_roots",
       "sneakyworldgen:adventure/terrain/ogt_mossy_gravel",
+      "sneakyworldgen:adventure/terrain/gravel_flat",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -35,7 +36,8 @@
     ],
     [
       "minecraft:amethyst_geode",
-      "minecraft:forest_rock"
+      "minecraft:forest_rock",
+      "sneakyworldgen:adventure/terrain/erratics"
     ],
     [
       "minecraft:monster_room",

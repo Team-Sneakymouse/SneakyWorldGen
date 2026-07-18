@@ -1,0 +1,35 @@
+{
+  "feature": "sneakyworldgen:adventure/terrain/alpine_tarn",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 70
+        },
+        "max_inclusive": {
+          "absolute": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

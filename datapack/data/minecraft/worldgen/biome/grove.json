@@ -23,7 +23,10 @@
     [
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/scree_spread",
       "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/grove_coarse",
+      "sneakyworldgen:adventure/terrain/powder_snow_pocket",
       "sneakyworldgen:adventure/terrain/alpine_tarn",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],

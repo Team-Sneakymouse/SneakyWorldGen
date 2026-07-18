@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:water",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    },
+    "target": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:grass_block",
+            "minecraft:dirt",
+            "minecraft:stone",
+            "minecraft:andesite",
+            "minecraft:coarse_dirt",
+            "minecraft:calcite"
+          ]
+        },
+        {
+          "type": "minecraft:matching_blocks",
+          "offset": [
+            0,
+            1,
+            0
+          ],
+          "blocks": "minecraft:air"
+        }
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 4
+    },
+    "half_height": 2
+  }
+}

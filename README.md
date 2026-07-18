@@ -39,6 +39,10 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Jungle elevation banding (lowland canopy → midland → upland scrub) + jungle floor
 - Meadow fir pockets + denser wildflowers
 - OGT muddy-roots / mossy-gravel floor; cathedral mega-conifers in old-growth taiga
+- Sparse jungle open woodland + tropical flowers; dense bamboo jungle bands + clearings
+- Grove coarse/scree spread; powder-snow pockets (peaks, grove, snowy taiga/beach)
+- Warm ocean seafloor rocks + denser coral; floating lilies on wetlands/rivers/tarns
+- Taiga/meadow/OGT gravel flats; cherry pool densify; beach shore cliffs
 - Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
 - Biome overrides (feature wiring + sky/foliage/water polish)
 

@@ -15,6 +15,9 @@
     [
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/scree_spread",
+      "sneakyworldgen:adventure/terrain/gravel_flat",
+      "sneakyworldgen:adventure/terrain/powder_snow_pocket",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [

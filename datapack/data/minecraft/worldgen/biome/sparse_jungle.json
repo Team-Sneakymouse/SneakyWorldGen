@@ -7,7 +7,7 @@
         "sound": "minecraft:music.overworld.sparse_jungle"
       }
     },
-    "minecraft:visual/sky_color": "#7ab8a0"
+    "minecraft:visual/sky_color": "#6db0a0"
   },
   "carvers": [
     "minecraft:cave",
@@ -16,11 +16,13 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "water_color": "#2a9a88",
-    "foliage_color": "#3d8a38"
+    "water_color": "#3f76e4",
+    "foliage_color": "#3f7a38",
+    "grass_color": "#5a9a48"
   },
   "features": [
     [
+      "sneakyworldgen:adventure/terrain/jungle_floor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -74,8 +76,11 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_sparse_jungle",
-      "minecraft:flower_warm",
+      "sneakyworldgen:adventure/vegetation/trees/sparse_jungle",
+      "sneakyworldgen:adventure/vegetation/dense_ferns",
+      "sneakyworldgen:adventure/vegetation/fallen_logs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
+      "sneakyworldgen:adventure/vegetation/tropical_flowers",
       "minecraft:patch_grass_jungle",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block_blob",
+  "config": {
+    "can_place_on": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:sand",
+        "minecraft:gravel",
+        "minecraft:stone",
+        "minecraft:andesite"
+      ]
+    },
+    "state": {
+      "Name": "minecraft:andesite"
+    }
+  }
+}

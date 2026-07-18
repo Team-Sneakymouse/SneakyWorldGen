@@ -25,6 +25,7 @@
     [
       "sneakyworldgen:adventure/terrain/andesite_recolor",
       "sneakyworldgen:adventure/terrain/alpine_tarn",
+      "sneakyworldgen:adventure/terrain/cherry_pool",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -82,6 +83,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "sneakyworldgen:adventure/vegetation/cherry_flowers_dense",
+      "sneakyworldgen:adventure/vegetation/dense_lilies",
       "minecraft:patch_tall_grass_2",
       "minecraft:patch_grass_plain",
       "minecraft:flower_cherry",

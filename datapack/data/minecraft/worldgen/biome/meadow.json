@@ -25,6 +25,7 @@
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
       "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/gravel_flat",
       "sneakyworldgen:adventure/terrain/alpine_tarn",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
@@ -83,13 +84,14 @@
     ],
     [
       "minecraft:glow_lichen",
+      "sneakyworldgen:adventure/vegetation/trees/meadow_firs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
+      "sneakyworldgen:adventure/vegetation/meadow_flowers_dense",
+      "sneakyworldgen:adventure/vegetation/dense_lilies",
       "minecraft:patch_tall_grass_2",
       "minecraft:patch_grass_meadow",
       "minecraft:flower_meadow",
       "minecraft:trees_meadow",
-      "sneakyworldgen:adventure/vegetation/trees/meadow_firs",
-      "sneakyworldgen:adventure/vegetation/forest_bushes",
-      "sneakyworldgen:adventure/vegetation/meadow_flowers_dense",
       "minecraft:wildflowers_meadow"
     ],
     [

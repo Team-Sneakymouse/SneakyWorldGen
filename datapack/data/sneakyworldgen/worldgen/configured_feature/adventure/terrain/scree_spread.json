@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:cobblestone"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:andesite"
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:coarse_dirt",
+        "minecraft:snow_block",
+        "minecraft:powder_snow"
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 3
+    },
+    "half_height": 1
+  }
+}

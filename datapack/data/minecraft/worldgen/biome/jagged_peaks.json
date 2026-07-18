@@ -24,7 +24,8 @@
     [
       "sneakyworldgen:adventure/terrain/peak_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
-      "sneakyworldgen:adventure/terrain/andesite_recolor"
+      "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/powder_snow_pocket"
     ],
     [
       "minecraft:lake_lava_underground",

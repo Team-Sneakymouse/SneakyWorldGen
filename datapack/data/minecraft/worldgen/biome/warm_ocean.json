@@ -1,37 +1,38 @@
 {
   "attributes": {
     "minecraft:audio/background_music": {
+      "creative": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.creative"
+      },
       "default": {
         "max_delay": 24000,
         "min_delay": 12000,
-        "sound": "minecraft:music.overworld.swamp"
+        "sound": "minecraft:music.game"
+      },
+      "underwater": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.under_water"
       }
     },
-    "minecraft:gameplay/increased_fire_burnout": true,
-    "minecraft:visual/fog_color": "#c0d8ff",
-    "minecraft:visual/sky_color": "#6a8870",
-    "minecraft:visual/water_fog_color": "#4d7a60",
-    "minecraft:visual/water_fog_end_distance": {
-      "argument": 0.85,
-      "modifier": "multiply"
-    }
+    "minecraft:visual/sky_color": "#62b0ff",
+    "minecraft:visual/water_fog_color": "#041f33"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.9,
+  "downfall": 0.5,
   "effects": {
-    "dry_foliage_color": "#7b5334",
-    "foliage_color": "#3d6b40",
-    "grass_color_modifier": "swamp",
-    "water_color": "#3a6a5a"
+    "water_color": "#43d5ee"
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/swamp_mud",
-      "sneakyworldgen:adventure/terrain/swamp_pools"
+      "sneakyworldgen:adventure/terrain/ocean_rock",
+      "sneakyworldgen:adventure/terrain/ocean_andesite"
     ],
     [
       "minecraft:lake_lava_underground",
@@ -41,8 +42,6 @@
       "minecraft:amethyst_geode"
     ],
     [
-      "minecraft:fossil_upper",
-      "minecraft:fossil_lower",
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
@@ -75,8 +74,9 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:disk_grass",
-      "minecraft:disk_clay"
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -85,14 +85,17 @@
     ],
     [
       "minecraft:glow_lichen",
-      "sneakyworldgen:adventure/vegetation/hanging_moss",
-      "sneakyworldgen:adventure/vegetation/dense_lilies",
-      "minecraft:trees_mangrove",
-      "minecraft:patch_grass_normal",
-      "minecraft:patch_dead_bush",
-      "minecraft:patch_waterlily",
-      "minecraft:seagrass_swamp",
-      "minecraft:patch_firefly_bush_near_water"
+      "sneakyworldgen:adventure/vegetation/dense_coral",
+      "minecraft:trees_water",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_badlands",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water",
+      "minecraft:seagrass_warm",
+      "minecraft:sea_pickle"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -110,16 +113,15 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:frog",
-        "maxCount": 5,
-        "minCount": 2,
-        "weight": 10
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
+      {
+        "type": "minecraft:drowned",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
       {
         "type": "minecraft:spider",
         "maxCount": 4,
@@ -142,7 +144,7 @@
         "type": "minecraft:skeleton",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 70
+        "weight": 100
       },
       {
         "type": "minecraft:creeper",
@@ -167,18 +169,6 @@
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
-      },
-      {
-        "type": "minecraft:slime",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 1
-      },
-      {
-        "type": "minecraft:bogged",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 30
       }
     ],
     "underground_water_creature": [
@@ -191,13 +181,38 @@
     ],
     "water_ambient": [
       {
+        "type": "minecraft:pufferfish",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 15
+      },
+      {
         "type": "minecraft:tropical_fish",
         "maxCount": 8,
         "minCount": 8,
         "weight": 25
       }
     ],
-    "water_creature": []
+    "water_creature": [
+      {
+        "type": "minecraft:nautilus",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:squid",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:dolphin",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 2
+      }
+    ]
   },
-  "temperature": 0.8
+  "temperature": 0.5
 }

@@ -13,6 +13,7 @@
   },
   "features": [
     [
+      "sneakyworldgen:adventure/terrain/shore_cliffs",
       "sneakyworldgen:adventure/terrain/coast_mossy_stone"
     ],
     [
