@@ -13,7 +13,7 @@
     "argument2": {
       "type": "minecraft:mul",
       "argument1": 0.5,
-      "argument2": "plots:plot/offset"
+      "argument2": "sneakyworldgen:plot/offset"
     }
   }
 }

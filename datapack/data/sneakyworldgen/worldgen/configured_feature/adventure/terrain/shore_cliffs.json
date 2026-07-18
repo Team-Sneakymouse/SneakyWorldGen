@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:stone"
+      }
+    },
+    "target": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:grass_block",
+            "minecraft:dirt",
+            "minecraft:gravel",
+            "minecraft:sand"
+          ]
+        },
+        {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [1, -1, 0],
+              "blocks": ["minecraft:air", "minecraft:water"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [-1, -1, 0],
+              "blocks": ["minecraft:air", "minecraft:water"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, -1, 1],
+              "blocks": ["minecraft:air", "minecraft:water"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, -1, -1],
+              "blocks": ["minecraft:air", "minecraft:water"]
+            }
+          ]
+        }
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 5
+    },
+    "half_height": 3
+  }
+}

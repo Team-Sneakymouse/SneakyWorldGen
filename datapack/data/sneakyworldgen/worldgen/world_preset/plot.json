@@ -1,13 +1,13 @@
 {
   "dimensions": {
     "minecraft:overworld": {
-      "type": "plots:plot",
+      "type": "sneakyworldgen:plot",
       "generator": {
         "type": "minecraft:noise",
-        "settings": "plots:plot",
+        "settings": "sneakyworldgen:plot",
         "biome_source": {
           "type": "minecraft:fixed",
-          "biome": "plots:plot"
+          "biome": "sneakyworldgen:plot"
         }
       }
     }

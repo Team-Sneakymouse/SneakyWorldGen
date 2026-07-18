@@ -2,8 +2,8 @@
 # Deploy the datapack into the Paper test server and start it with a given world generator.
 #
 # Usage: scripts/test.sh <generator>
-#   generator — world preset name under the plots namespace (e.g. plot, adventure)
-#               Sets level-type to plots:<generator>
+#   generator — world preset name under the sneakyworldgen namespace (e.g. plot, adventure)
+#               Sets level-type to sneakyworldgen:<generator>
 
 set -euo pipefail
 
@@ -14,7 +14,7 @@ WORLD_DIR="$RUN_DIR/world"
 DATAPACKS_DIR="$WORLD_DIR/datapacks"
 PAPER_JAR="paper-26.2-62.jar"
 PACK_ZIP_NAME="SneakyWorldGen.zip"
-NAMESPACE="${WORLDGEN_NAMESPACE:-plots}"
+NAMESPACE="${WORLDGEN_NAMESPACE:-sneakyworldgen}"
 
 if [[ $# -lt 1 ]]; then
   echo "Usage: $0 <generator>" >&2

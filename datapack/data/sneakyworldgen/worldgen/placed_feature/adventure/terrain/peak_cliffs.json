@@ -1,0 +1,23 @@
+{
+  "feature": "sneakyworldgen:adventure/terrain/peak_cliffs",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 128
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": 90 },
+        "max_inclusive": { "absolute": 320 }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

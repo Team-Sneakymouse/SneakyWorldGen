@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:cobblestone"
+          }
+        }
+      ]
+    },
+    "target": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:grass_block",
+            "minecraft:dirt",
+            "minecraft:coarse_dirt",
+            "minecraft:snow_block"
+          ]
+        },
+        {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [1, 2, 0],
+              "blocks": ["minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [-1, 2, 0],
+              "blocks": ["minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, 2, 1],
+              "blocks": ["minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, 2, -1],
+              "blocks": ["minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite"]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [0, 3, 0],
+              "blocks": ["minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite"]
+            }
+          ]
+        }
+      ]
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 5
+    },
+    "half_height": 2
+  }
+}

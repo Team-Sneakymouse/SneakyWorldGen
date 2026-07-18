@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "plots:plot",
-    "plots:adventure"
+    "sneakyworldgen:plot",
+    "sneakyworldgen:adventure"
   ]
 }

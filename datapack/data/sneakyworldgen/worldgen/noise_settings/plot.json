@@ -53,7 +53,7 @@
               "type": "minecraft:interpolated",
               "argument": {
                 "type": "minecraft:blend_density",
-                "argument": "plots:plot/sloped_cheese"
+                "argument": "sneakyworldgen:plot/sloped_cheese"
               }
             }
           }
@@ -71,7 +71,7 @@
           "type": "minecraft:interpolated",
           "argument": {
             "type": "minecraft:blend_density",
-            "argument": "plots:plot/sloped_cheese"
+            "argument": "sneakyworldgen:plot/sloped_cheese"
           }
         }
       }

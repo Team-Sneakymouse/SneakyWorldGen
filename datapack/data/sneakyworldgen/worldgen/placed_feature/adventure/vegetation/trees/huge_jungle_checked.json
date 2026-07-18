@@ -1,0 +1,17 @@
+{
+  "feature": "sneakyworldgen:adventure/vegetation/tree/huge_jungle",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:jungle_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}
