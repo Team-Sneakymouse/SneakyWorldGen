@@ -31,6 +31,8 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Swamp mud + pools + hanging moss (swamp, mangrove swamp)
 - Alpine tarns (meadow, cherry grove, grove); rocky coast mossy stone/tuff (beach, stony shore)
 - Fallen logs + forest bushes on wooded biomes
+- Dark forest mud floor + huge/dense fungi; pale garden eerie floor/moss/hanging moss + sparse oaks
+- Glacial ice spikes (blue ice, scree, grass islands, denser spikes); erratic stone piles (meadow/taiga/grove/etc.)
 - Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
 - Biome overrides (feature wiring + sky/foliage/water polish)
 

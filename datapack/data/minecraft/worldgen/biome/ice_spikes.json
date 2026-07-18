@@ -1,35 +1,40 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": "#8290b0"
+    "minecraft:visual/sky_color": "#8eb0ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.4,
+  "creature_spawn_probability": 0.07,
+  "downfall": 0.5,
   "effects": {
-    "water_color": "#3d57d6"
+    "water_color": "#3d6fc4"
   },
   "features": [
-    [
-      "sneakyworldgen:adventure/terrain/stone_cliffs",
-      "sneakyworldgen:adventure/terrain/scree",
-      "sneakyworldgen:adventure/terrain/ruined_road"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "sneakyworldgen:adventure/terrain/erratics"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
+    [
+      "sneakyworldgen:adventure/terrain/glacial_freeze",
+      "sneakyworldgen:adventure/terrain/glacial_snow_sheet",
+      "minecraft:ice_spike",
+      "sneakyworldgen:adventure/terrain/glacial_spikes",
+      "minecraft:ice_patch",
+      "sneakyworldgen:adventure/terrain/glacial_blue_ice",
+      "sneakyworldgen:adventure/terrain/glacial_scree",
+      "sneakyworldgen:adventure/terrain/glacial_grass"
+    ],
     [],
     [
       "minecraft:ore_dirt",
@@ -69,23 +74,18 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_large_fern",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_low",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
-      "sneakyworldgen:adventure/vegetation/fallen_logs",
-      "sneakyworldgen:adventure/vegetation/forest_bushes",
+      "minecraft:trees_snowy",
       "minecraft:flower_default",
-      "minecraft:patch_grass_taiga_2",
-      "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga",
+      "minecraft:patch_grass_badlands",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:patch_berry_rare"
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "sneakyworldgen:adventure/terrain/shadow_snow"
     ]
   ],
   "has_precipitation": true,
@@ -102,46 +102,16 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:sheep",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 12
-      },
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:cow",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
         "type": "minecraft:rabbit",
         "maxCount": 3,
         "minCount": 2,
-        "weight": 4
+        "weight": 10
       },
       {
-        "type": "minecraft:fox",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 8
+        "type": "minecraft:polar_bear",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
       }
     ],
     "misc": [],
@@ -168,7 +138,7 @@
         "type": "minecraft:skeleton",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 100
+        "weight": 20
       },
       {
         "type": "minecraft:creeper",
@@ -193,6 +163,12 @@
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
+      },
+      {
+        "type": "minecraft:stray",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 80
       }
     ],
     "underground_water_creature": [
@@ -206,5 +182,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.5
+  "temperature": 0.0
 }

@@ -7,8 +7,8 @@
         "sound": "minecraft:music.overworld.forest"
       }
     },
-    "minecraft:visual/sky_color": "#5a6e4a",
-    "minecraft:visual/fog_color": "#a0b090"
+    "minecraft:visual/sky_color": "#4a5c3e",
+    "minecraft:visual/fog_color": "#8a9a78"
   },
   "carvers": [
     "minecraft:cave",
@@ -20,12 +20,13 @@
     "dry_foliage_color": "#7b5334",
     "grass_color_modifier": "dark_forest",
     "water_color": "#3f76e4",
-    "grass_color": "#4a6b3a",
-    "foliage_color": "#2f5a28"
+    "grass_color": "#3f5e32",
+    "foliage_color": "#254a20"
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/moss_floor"
+      "sneakyworldgen:adventure/terrain/moss_floor",
+      "sneakyworldgen:adventure/terrain/dark_forest_mud"
     ],
     [
       "minecraft:lake_lava_underground",
@@ -79,11 +80,14 @@
     [
       "minecraft:glow_lichen",
       "minecraft:dark_forest_vegetation",
+      "sneakyworldgen:adventure/vegetation/huge_fungi",
       "sneakyworldgen:adventure/vegetation/dense_ferns",
       "sneakyworldgen:adventure/vegetation/fern_carpet",
       "sneakyworldgen:adventure/vegetation/rainforest_vines",
       "sneakyworldgen:adventure/vegetation/fallen_logs",
       "sneakyworldgen:adventure/vegetation/forest_bushes",
+      "sneakyworldgen:adventure/vegetation/dense_brown_mushroom",
+      "sneakyworldgen:adventure/vegetation/dense_red_mushroom",
       "minecraft:forest_flowers",
       "minecraft:flower_default",
       "minecraft:patch_grass_forest",

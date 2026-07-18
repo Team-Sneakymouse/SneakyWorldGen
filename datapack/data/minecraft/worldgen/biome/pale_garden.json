@@ -1,20 +1,26 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": "#8290b0"
+    "minecraft:audio/background_music": {},
+    "minecraft:audio/music_volume": 0.0,
+    "minecraft:visual/fog_color": "#6e655e",
+    "minecraft:visual/sky_color": "#a8a8a8",
+    "minecraft:visual/water_fog_color": "#3f4a55"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.4,
+  "downfall": 0.8,
   "effects": {
-    "water_color": "#3d57d6"
+    "dry_foliage_color": "#a0a69c",
+    "foliage_color": "#7a8070",
+    "grass_color": "#6a7368",
+    "water_color": "#5f6f80"
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/stone_cliffs",
-      "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/pale_floor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -22,8 +28,7 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "sneakyworldgen:adventure/terrain/erratics"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -69,20 +74,17 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_large_fern",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_low",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
+      "sneakyworldgen:adventure/vegetation/sparse_pale_oaks",
+      "sneakyworldgen:adventure/vegetation/hanging_moss",
+      "sneakyworldgen:adventure/vegetation/pale_hanging_moss",
       "sneakyworldgen:adventure/vegetation/fallen_logs",
-      "sneakyworldgen:adventure/vegetation/forest_bushes",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_taiga_2",
-      "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga",
+      "sneakyworldgen:adventure/vegetation/pale_moss_dense",
+      "minecraft:pale_garden_flowers",
+      "minecraft:flower_pale_garden",
+      "minecraft:patch_grass_forest",
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:patch_berry_rare"
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -100,50 +102,7 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:sheep",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 12
-      },
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:cow",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:rabbit",
-        "maxCount": 3,
-        "minCount": 2,
-        "weight": 4
-      },
-      {
-        "type": "minecraft:fox",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 8
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
       {
@@ -206,5 +165,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.5
+  "temperature": 0.7
 }
