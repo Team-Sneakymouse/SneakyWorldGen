@@ -23,6 +23,7 @@
   },
   "features": [
     [
+      "sneakyworldgen:adventure/terrain/andesite_recolor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [

@@ -22,7 +22,8 @@
   "features": [
     [
       "sneakyworldgen:adventure/terrain/peak_cliffs",
-      "sneakyworldgen:adventure/terrain/scree"
+      "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/andesite_recolor"
     ],
     [
       "minecraft:lake_lava_underground",
@@ -81,7 +82,9 @@
       "minecraft:glow_lichen"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "sneakyworldgen:adventure/terrain/shadow_snow",
+      "sneakyworldgen:adventure/terrain/de_snowify"
     ]
   ],
   "has_precipitation": true,

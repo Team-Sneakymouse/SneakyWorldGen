@@ -24,6 +24,7 @@
     [
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/moss_floor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -80,6 +81,9 @@
       "minecraft:glow_lichen",
       "minecraft:patch_large_fern",
       "sneakyworldgen:adventure/vegetation/trees/old_growth_pine",
+      "sneakyworldgen:adventure/vegetation/dense_ferns",
+      "sneakyworldgen:adventure/vegetation/fern_carpet",
+      "sneakyworldgen:adventure/vegetation/rainforest_vines",
       "minecraft:flower_default",
       "minecraft:patch_grass_taiga",
       "minecraft:patch_dead_bush",

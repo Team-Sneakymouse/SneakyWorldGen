@@ -23,6 +23,7 @@
     [
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/andesite_recolor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -84,7 +85,8 @@
       "minecraft:patch_pumpkin"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "sneakyworldgen:adventure/terrain/shadow_snow"
     ]
   ],
   "has_precipitation": true,

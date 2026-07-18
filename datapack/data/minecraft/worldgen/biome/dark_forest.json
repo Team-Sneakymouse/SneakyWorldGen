@@ -4,10 +4,11 @@
       "default": {
         "max_delay": 24000,
         "min_delay": 12000,
-        "sound": "minecraft:music.overworld.flower_forest"
+        "sound": "minecraft:music.overworld.forest"
       }
     },
-    "minecraft:visual/sky_color": "#79a8ff"
+    "minecraft:visual/sky_color": "#5a6e4a",
+    "minecraft:visual/fog_color": "#a0b090"
   },
   "carvers": [
     "minecraft:cave",
@@ -16,15 +17,15 @@
   ],
   "downfall": 0.8,
   "effects": {
+    "dry_foliage_color": "#7b5334",
+    "grass_color_modifier": "dark_forest",
     "water_color": "#3f76e4",
-    "grass_color": "#6fb86a",
-    "foliage_color": "#4f9a48"
+    "grass_color": "#4a6b3a",
+    "foliage_color": "#2f5a28"
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/stone_cliffs",
-      "sneakyworldgen:adventure/terrain/andesite_recolor",
-      "sneakyworldgen:adventure/terrain/ruined_road"
+      "sneakyworldgen:adventure/terrain/moss_floor"
     ],
     [
       "minecraft:lake_lava_underground",
@@ -77,12 +78,16 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:flower_forest_flowers",
-      "minecraft:trees_flower_forest",
-      "minecraft:flower_flower_forest",
-      "minecraft:patch_grass_badlands",
+      "minecraft:dark_forest_vegetation",
+      "sneakyworldgen:adventure/vegetation/dense_ferns",
+      "sneakyworldgen:adventure/vegetation/fern_carpet",
+      "sneakyworldgen:adventure/vegetation/rainforest_vines",
+      "minecraft:forest_flowers",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_forest",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
+      "minecraft:patch_leaf_litter",
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
@@ -127,12 +132,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 8
-      },
-      {
-        "type": "minecraft:rabbit",
-        "maxCount": 3,
-        "minCount": 2,
-        "weight": 4
       }
     ],
     "misc": [],

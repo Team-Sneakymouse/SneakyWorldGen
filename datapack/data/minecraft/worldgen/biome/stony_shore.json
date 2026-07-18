@@ -14,7 +14,8 @@
   "features": [
     [
       "sneakyworldgen:adventure/terrain/shore_cliffs",
-      "sneakyworldgen:adventure/terrain/scree"
+      "sneakyworldgen:adventure/terrain/scree",
+      "sneakyworldgen:adventure/terrain/andesite_recolor"
     ],
     [
       "minecraft:lake_lava_underground",
