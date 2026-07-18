@@ -29,6 +29,8 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Moss floor + dense fern understory + rainforest vines (OGT, jungle, dark forest)
 - Alpine tree-line banding (low/mid/high spruce) on taiga, snowy taiga, grove, windswept forest
 - Swamp mud + pools + hanging moss (swamp, mangrove swamp)
+- Alpine tarns (meadow, cherry grove, grove); rocky coast mossy stone/tuff (beach, stony shore)
+- Fallen logs + forest bushes on wooded biomes
 - Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
 - Biome overrides (feature wiring + sky/foliage/water polish)
 

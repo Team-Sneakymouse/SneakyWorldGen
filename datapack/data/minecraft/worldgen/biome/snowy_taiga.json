@@ -72,6 +72,8 @@
       "sneakyworldgen:adventure/vegetation/trees/alpine_low",
       "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
       "sneakyworldgen:adventure/vegetation/trees/alpine_high",
+      "sneakyworldgen:adventure/vegetation/fallen_logs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:flower_default",
       "minecraft:patch_grass_taiga_2",
       "minecraft:brown_mushroom_taiga",

@@ -24,6 +24,7 @@
   "features": [
     [
       "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/alpine_tarn",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [

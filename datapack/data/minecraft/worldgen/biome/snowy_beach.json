@@ -1,23 +1,19 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": "#7da2c9"
+    "minecraft:visual/sky_color": "#78a8d8"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.8,
+  "downfall": 0.3,
   "effects": {
-    "water_color": "#3f76e4",
-    "grass_color": "#5a8a4a",
-    "foliage_color": "#3d6b38"
+    "water_color": "#3d57d6"
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/stone_cliffs",
-      "sneakyworldgen:adventure/terrain/scree",
-      "sneakyworldgen:adventure/terrain/ruined_road"
+      "sneakyworldgen:adventure/terrain/coast_mossy_stone"
     ],
     [
       "minecraft:lake_lava_underground",
@@ -70,20 +66,13 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_large_fern",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_low",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
-      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
-      "sneakyworldgen:adventure/vegetation/fallen_logs",
-      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:flower_default",
-      "minecraft:patch_grass_taiga_2",
-      "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga",
+      "minecraft:patch_grass_badlands",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:patch_berry_common"
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -101,50 +90,7 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:sheep",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 12
-      },
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:cow",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:rabbit",
-        "maxCount": 3,
-        "minCount": 2,
-        "weight": 4
-      },
-      {
-        "type": "minecraft:fox",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 8
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
       {
@@ -207,5 +153,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.25
+  "temperature": 0.05
 }

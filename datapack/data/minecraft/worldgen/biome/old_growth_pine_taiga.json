@@ -84,6 +84,8 @@
       "sneakyworldgen:adventure/vegetation/dense_ferns",
       "sneakyworldgen:adventure/vegetation/fern_carpet",
       "sneakyworldgen:adventure/vegetation/rainforest_vines",
+      "sneakyworldgen:adventure/vegetation/fallen_logs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:flower_default",
       "minecraft:patch_grass_taiga",
       "minecraft:patch_dead_bush",

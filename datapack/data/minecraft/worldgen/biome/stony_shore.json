@@ -15,7 +15,9 @@
     [
       "sneakyworldgen:adventure/terrain/shore_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
-      "sneakyworldgen:adventure/terrain/andesite_recolor"
+      "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/coast_mossy_stone",
+      "sneakyworldgen:adventure/terrain/coast_tuff"
     ],
     [
       "minecraft:lake_lava_underground",

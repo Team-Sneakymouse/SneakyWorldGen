@@ -24,6 +24,7 @@
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
       "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/alpine_tarn",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -83,6 +84,8 @@
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
       "sneakyworldgen:adventure/vegetation/trees/alpine_high",
+      "sneakyworldgen:adventure/vegetation/fallen_logs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:patch_pumpkin"
     ],
     [

@@ -25,6 +25,7 @@
       "sneakyworldgen:adventure/terrain/stone_cliffs",
       "sneakyworldgen:adventure/terrain/scree",
       "sneakyworldgen:adventure/terrain/andesite_recolor",
+      "sneakyworldgen:adventure/terrain/alpine_tarn",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -85,6 +86,7 @@
       "minecraft:patch_grass_meadow",
       "minecraft:flower_meadow",
       "minecraft:trees_meadow",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:wildflowers_meadow"
     ],
     [

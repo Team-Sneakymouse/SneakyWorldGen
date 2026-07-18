@@ -76,6 +76,8 @@
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
       "sneakyworldgen:adventure/vegetation/trees/alpine_high",
+      "sneakyworldgen:adventure/vegetation/fallen_logs",
+      "sneakyworldgen:adventure/vegetation/forest_bushes",
       "minecraft:patch_bush",
       "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
