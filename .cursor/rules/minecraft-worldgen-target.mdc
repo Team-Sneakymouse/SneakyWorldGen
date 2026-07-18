@@ -1,0 +1,51 @@
+---
+description: Target Minecraft version and worldgen datapack layout for this project
+alwaysApply: true
+---
+
+# Minecraft Worldgen Target (Java 26.2)
+
+Target **Java Edition 26.2** (Chaos Cubed). Data pack format **107.1**.
+
+## Pack metadata
+
+Use the post-1.21.9 `pack.mcmeta` schema (`min_format` / `max_format`), not legacy `pack_format` alone:
+
+```json
+{
+  "pack": {
+    "description": "...",
+    "min_format": [107, 1],
+    "max_format": [107, 1]
+  }
+}
+```
+
+Unknown JSON fields are **rejected** (strict parsing). Do not leave dead keys from older formats.
+
+## Layout
+
+Worldgen lives under `data/<namespace>/worldgen/`:
+
+| Path | Role |
+|------|------|
+| `noise_settings/` | Terrain shape, noise router, surface rules |
+| `density_function/` | Reusable density expressions |
+| `noise/` | Noise parameters |
+| `biome/` | Biomes, features, carvers, spawns |
+| `configured_feature/`, `placed_feature/` | Feature defs + placement |
+| `structure/`, `structure_set/`, `template_pool/` | Structures |
+| `world_preset/`, `dimension_type/` | World/dimension setup |
+
+Prefer **world presets** over loose `dimension/` files (still supported, but presets are current).
+
+## Mental model
+
+1. **Noise router** density functions shape terrain / biomes / aquifers / veins.
+2. **`final_density` > 0** → `default_block`; otherwise air/fluid via aquifers.
+3. **Surface rules** replace `default_block` with biome surface materials.
+4. **Features / structures** decorate afterward.
+
+## Do not use yet (26.3 snapshots)
+
+Unless explicitly targeting 26.3: no `material_rule` rename, no `worldgen/material_rule` registry, no density `sub`/`div`/`lerp`/`floor`/`ceil`, no `invert`→`reciprocal` rename, no explicit `beardifier` requirement on `final_density`.

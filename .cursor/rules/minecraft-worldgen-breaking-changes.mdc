@@ -1,0 +1,40 @@
+---
+description: Recent breaking worldgen changes agents must not regress to
+globs:
+  - "**/worldgen/**/*.json"
+  - "**/pack.mcmeta"
+alwaysApply: false
+---
+
+# Worldgen Breaking-Change Checklist
+
+When editing or porting worldgen JSON, verify against this timeline. Prefer current APIs; do not reintroduce removed fields.
+
+## 1.21.9–1.21.10
+
+- [ ] `noise_router.preliminary_surface_level` exists (not `initial_density_without_jaggedness`)
+- [ ] `pack.mcmeta` uses `min_format` / `max_format`
+
+## 26.1
+
+- [ ] No `flower` / `flower_no_bonemeal` / `random_patch` feature types
+- [ ] Patches via placement modifiers; bone meal via `#can_spawn_from_bone_meal`
+- [ ] `block_blob` / `spike` names; tree `below_trunk_provider`
+- [ ] Dimension type: `has_ender_dragon_fight`, `default_clock` as needed
+
+## 26.2 (pack 107.1)
+
+- [ ] No `weird_scaled_sampler` — use `interval_select`
+- [ ] No `noise_gradient` surface rule — use `noise_threshold` (+ optional `is_3d`)
+- [ ] Speleothem renames + `base_block` / `pointed_block` / `replaceable_blocks`
+- [ ] `lake` / `root_system` / `multiface_growth` required fields present
+- [ ] `large_dripstone.column_radius` ≤ 16
+- [ ] Structure processor chains account for sequential state evaluation
+- [ ] No unknown/extra JSON keys (strict parse)
+
+## Sources
+
+- [Java Edition 26.2](https://minecraft.wiki/w/Java_Edition_26.2)
+- [Density function](https://minecraft.wiki/w/Density_function)
+- [Noise router](https://minecraft.wiki/w/Noise_router)
+- [Datapack Wiki breaking changes](https://datapack.wiki/wiki/info/breaking-changes)

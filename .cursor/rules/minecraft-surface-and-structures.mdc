@@ -1,0 +1,40 @@
+---
+description: Surface rules and structure processors for Minecraft 26.2 worldgen
+globs:
+  - "**/worldgen/noise_settings/**/*.json"
+  - "**/worldgen/processor_list/**/*.json"
+  - "**/worldgen/structure/**/*.json"
+alwaysApply: false
+---
+
+# Surface Rules & Structures (26.2)
+
+## Surface rules (`surface_rule` in noise settings)
+
+Still named **`surface_rule`** on 26.2 (26.3 renames to `material_rule` + registries — do not use that yet).
+
+### `noise_threshold` condition
+
+New optional field **`is_3d`** (default `false`). When `true`, noise is evaluated in 3D.
+
+### Removed: `noise_gradient`
+
+Do not author `noise_gradient` surface rules. Express the same banding with `noise_threshold` conditions (and `is_3d` if needed).
+
+### Preliminary surface
+
+Use condition `above_preliminary_surface` so grass/dirt layers follow `preliminary_surface_level` and do not paint cave floors. That Y comes from the noise router’s `preliminary_surface_level`, not from scanning `final_density`.
+
+## Structure processors
+
+### `block_rot` chaining (26.2 behavior change)
+
+Processors now see the **block state after earlier processors**, not always the original structure block. The first processor still sees the template’s original block. Chained match-and-replace lists can stop matching once a prior processor changed the block — reorder or redesign chains accordingly.
+
+### Flexible IDs
+
+`protected_blocks.value` accepts a tag, ID, or list of IDs.
+
+## Dimension types
+
+`infiniburn` also accepts ID / list / tag. Custom dimensions need `has_ender_dragon_fight` and usually `default_clock` (e.g. `minecraft:overworld`) so time works (26.1+).

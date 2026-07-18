@@ -1,0 +1,44 @@
+---
+description: Configured/placed feature format for Minecraft 26.1–26.2 worldgen
+globs:
+  - "**/worldgen/configured_feature/**/*.json"
+  - "**/worldgen/placed_feature/**/*.json"
+alwaysApply: false
+---
+
+# Configured Features (26.1–26.2)
+
+## Removed / replaced (26.1)
+
+- Feature types **`flower`**, **`flower_no_bonemeal`**, **`random_patch`** are gone. Build patches with placement modifiers: `count` + `random_offset` (and friends) on a simple block feature.
+- Bone-meal plantables: use configured feature tag `#can_spawn_from_bone_meal` (not flower-only).
+- Renames: `forest_rock` → **`block_blob`** (needs `can_place_on`); `ice_spike` → **`spike`** (needs `state`, `can_place_on`, `can_replace`).
+- Huge mushrooms need `can_place_on`.
+- Trees: `force_dirt` / `dirt_provider` → **`below_trunk_provider`** (rule-based; **required** in 26.2 — no default).
+- `disk.state_provider` must be a full block state provider (often `rule_based_state_provider`).
+
+## New / expanded (26.2)
+
+| Type | Notes |
+|------|--------|
+| `weighted_random_selector` | Pick one weighted placed feature |
+| `sequence` | Run placed features in order; stop chain if one fails to place |
+| `template` | Place a weighted structure template (optional `rotations`) |
+| `speleothem` | Was `pointed_dripstone`; needs `base_block`, `pointed_block`, `replaceable_blocks` |
+| `speleothem_cluster` | Was `dripstone_cluster`; same new block fields + renamed chance fields |
+
+Also: `large_dripstone` needs `replaceable_blocks`; `column_radius` max is **16** (was 19).
+
+### Required new fields
+
+- **`lake`**: `can_place_feature`, `can_replace_with_air_or_fluid`, `can_replace_with_barrier` (block predicates).
+- **`root_system`**: `level_test_distance`, `max_level_deviation` (vanilla uses `0`).
+- **`multiface_growth`**: `block` is mandatory (vanilla: `glow_lichen`).
+
+### Flexible ID fields
+
+`cannot_replace`, `invalid_blocks`, `root_replaceable`, `replaceable` accept a **tag, single ID, or list of IDs**.
+
+### Block predicate
+
+`matching_biomes` — `{ "biomes": "<id|list|#tag>" }` for worldgen placement checks.

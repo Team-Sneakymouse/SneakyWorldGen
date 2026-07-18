@@ -1,0 +1,48 @@
+---
+description: Density functions and noise_router rules for Minecraft 26.2
+globs:
+  - "**/worldgen/density_function/**/*.json"
+  - "**/worldgen/noise_settings/**/*.json"
+alwaysApply: false
+---
+
+# Density Functions & Noise Router (26.2)
+
+## Noise router fields (required shape)
+
+`noise_router` must include climate axes (`temperature`, `vegetation`, `continents`, `erosion`, `depth`, `ridges`), aquifer/vein fields, **`preliminary_surface_level`**, and **`final_density`**.
+
+### `preliminary_surface_level` (since 1.21.9)
+
+Replaces removed `initial_density_without_jaggedness`. It must return a **Y level** (2D, sampled at Y=0), not a density to scan.
+
+To restore old “scan down for first solid” behavior:
+
+```json
+{
+  "type": "minecraft:find_top_surface",
+  "density": "namespace:your_old_initial_density",
+  "upper_bound": 320,
+  "lower_bound": -64,
+  "cell_height": 8
+}
+```
+
+Keep this level slightly **below** true terrain so `above_preliminary_surface` surface conditions still place grass/dirt on the real surface, not in caves.
+
+## `interval_select` (26.2) — replaces `weird_scaled_sampler`
+
+`weird_scaled_sampler` is **removed**. Use `interval_select`:
+
+- `input` — density to compare
+- `thresholds` — N floats (sorted ascending)
+- `functions` — N+1 densities (`input < thresholds[i]` → `functions[i]`; above last threshold → last function)
+
+Vanilla `type_1` rarity mapper ≈ thresholds `[-0.75, -0.5, 0.5, 0.75]` with rarity multipliers `[0.5, 0.75, 1.0, 2.0, 3.0]` on abs-scaled noise. `type_2` ≈ thresholds `[-0.5, 0.0, 0.5]` with `[0.75, 1.0, 1.5, 2.0]`.
+
+## Useful types since 1.21.9
+
+- `find_top_surface` — column scan → top Y where density > 0
+- `invert` — `1/x` (renamed to `reciprocal` only in **26.3**)
+
+Prefer named files under `worldgen/density_function/` over huge inline trees for readability and reuse.
