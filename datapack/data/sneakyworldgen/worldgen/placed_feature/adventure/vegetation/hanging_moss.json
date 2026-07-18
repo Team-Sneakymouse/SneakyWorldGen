@@ -1,0 +1,54 @@
+{
+  "feature": "sneakyworldgen:adventure/vegetation/hanging_moss",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 24
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": 58 },
+        "max_inclusive": { "absolute": 90 }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 16,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:oak_leaves",
+          "minecraft:dark_oak_leaves",
+          "minecraft:mangrove_leaves",
+          "minecraft:jungle_leaves",
+          "minecraft:spruce_leaves",
+          "minecraft:mangrove_roots",
+          "minecraft:pale_oak_leaves"
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:air",
+          "minecraft:vine",
+          "minecraft:short_grass",
+          "minecraft:fern"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": -1
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -81,7 +81,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_grove",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
       "minecraft:patch_pumpkin"
     ],
     [

@@ -71,7 +71,9 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_large_fern",
-      "minecraft:trees_taiga",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_low",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
       "minecraft:flower_default",
       "minecraft:patch_grass_taiga_2",
       "minecraft:brown_mushroom_taiga",

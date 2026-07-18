@@ -27,6 +27,8 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Terrain: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
 - Highland andesite recolor; peak de-snowify + lee-side shadow snow
 - Moss floor + dense fern understory + rainforest vines (OGT, jungle, dark forest)
+- Alpine tree-line banding (low/mid/high spruce) on taiga, snowy taiga, grove, windswept forest
+- Swamp mud + pools + hanging moss (swamp, mangrove swamp)
 - Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
 - Biome overrides (feature wiring + sky/foliage/water polish)
 

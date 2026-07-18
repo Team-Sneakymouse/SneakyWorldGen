@@ -74,7 +74,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_windswept_forest",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_mid",
+      "sneakyworldgen:adventure/vegetation/trees/alpine_high",
       "minecraft:patch_bush",
       "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
