@@ -22,7 +22,7 @@
   },
   "features": [
     [
-      "sneakyworldgen:adventure/terrain/jungle_floor",
+      "sneakyworldgen:adventure/terrain/sparse_jungle_floor",
       "sneakyworldgen:adventure/terrain/ruined_road"
     ],
     [
@@ -77,7 +77,7 @@
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/trees/sparse_jungle",
-      "sneakyworldgen:adventure/vegetation/dense_ferns",
+      "sneakyworldgen:adventure/vegetation/sparse_ferns",
       "sneakyworldgen:adventure/vegetation/fallen_logs",
       "sneakyworldgen:adventure/vegetation/forest_bushes",
       "sneakyworldgen:adventure/vegetation/tropical_flowers",
