@@ -21,9 +21,10 @@ Custom **amplified-based** terrain (`sneakyworldgen:adventure` noise settings) w
 
 Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json`](datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json)
 
-**Direction**: epic mega-tree forests, cliff/scree on highlands, wilder river banks, biome color polish, and sparse ruined roads as a hint of long-abandoned civilization.
+**Direction**: epic mega-tree forests, cliff/scree on highlands, wilder river banks, biome color polish, and sparse ruined roads as a hint of long-abandoned civilization. Vanilla villages are disabled pack-wide.
 
 **In pack now**
+- Structures: no villages (`minecraft:worldgen/structure_set/villages` emptied)
 - Noise: `sneakyworldgen:adventure` (amplified peaks; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)
 - Terrain features: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
 - Highland andesite recolor; peak de-snowify + lee-side shadow snow
