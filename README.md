@@ -25,6 +25,7 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 
 **In pack now**
 - Structures: no villages (`minecraft:worldgen/structure_set/villages` emptied)
+- Caves: no noodle/spaghetti tunnels; cheese caves + entrances kept. Mid-depth = lush/dripstone (light surface bleed) + deeper sulfur; deep layer (depth 1.1) = deep dark everywhere
 - Noise: `sneakyworldgen:adventure` (amplified peaks; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)
 - Terrain features: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
 - Highland andesite recolor; peak de-snowify + lee-side shadow snow
