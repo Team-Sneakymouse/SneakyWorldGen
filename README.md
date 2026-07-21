@@ -24,7 +24,7 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 **Direction**: epic mega-tree forests, cliff/scree on highlands, wilder river banks, biome color polish, and sparse ruined roads as a hint of long-abandoned civilization. Vanilla villages, mineshafts, and trial chambers are disabled pack-wide.
 
 **In pack now**
-- Structures: no villages / mineshafts / trial chambers; denser ancient cities in deep dark
+- Structures: no villages / mineshafts / trial chambers / pillager outposts / ruined portals; denser ancient cities in deep dark
 - No water/lava cliff springs (`spring_water` / `spring_lava`)
 - Caves: large cheese **pockets** only (no spaghetti/noodle/carver snakes), ~3× wider than vanilla cheese scale. Mid-depth = lush/dripstone/sulfur; deep band depth `[0.8, 1.2]` = deep dark
 - Biomes: beach/snowy beach/stony shore continentalness narrowed (less inland paint); ice spikes inland-only (no coastal niches)
