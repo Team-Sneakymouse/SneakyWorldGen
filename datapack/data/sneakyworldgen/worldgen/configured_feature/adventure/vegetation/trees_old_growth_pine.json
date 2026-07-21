@@ -12,10 +12,6 @@
         "feature": "sneakyworldgen:adventure/vegetation/trees/huge_pine_checked"
       },
       {
-        "chance": 0.15,
-        "feature": "minecraft:mega_pine_checked"
-      },
-      {
         "chance": 0.1,
         "feature": "minecraft:pine_checked"
       }

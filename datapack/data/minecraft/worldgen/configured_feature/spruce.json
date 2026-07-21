@@ -36,8 +36,8 @@
       },
       "trunk_height": {
         "type": "minecraft:uniform",
-        "min_inclusive": 2,
-        "max_inclusive": 3
+        "min_inclusive": 6,
+        "max_inclusive": 8
       }
     },
     "foliage_provider": {
@@ -59,8 +59,8 @@
     },
     "trunk_placer": {
       "type": "minecraft:straight_trunk_placer",
-      "base_height": 10,
-      "height_rand_a": 3,
+      "base_height": 12,
+      "height_rand_a": 4,
       "height_rand_b": 2
     },
     "trunk_provider": {

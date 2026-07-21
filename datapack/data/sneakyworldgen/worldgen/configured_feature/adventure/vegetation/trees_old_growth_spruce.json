@@ -12,10 +12,6 @@
         "feature": "sneakyworldgen:adventure/vegetation/trees/huge_spruce_checked"
       },
       {
-        "chance": 0.15,
-        "feature": "minecraft:mega_spruce_checked"
-      },
-      {
         "chance": 0.1,
         "feature": "minecraft:spruce_checked"
       }
