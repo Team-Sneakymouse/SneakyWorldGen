@@ -74,7 +74,7 @@
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/trees/sparse_jungle",
-      "sneakyworldgen:adventure/vegetation/sparse_ferns",
+      "sneakyworldgen:adventure/vegetation/dense_ferns",
       "sneakyworldgen:adventure/vegetation/fallen_logs",
       "sneakyworldgen:adventure/vegetation/forest_bushes",
       "sneakyworldgen:adventure/vegetation/tropical_flowers",
