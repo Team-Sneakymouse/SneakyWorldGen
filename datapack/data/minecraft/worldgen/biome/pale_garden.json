@@ -68,10 +68,7 @@
       "minecraft:disk_gravel"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/sparse_pale_oaks",

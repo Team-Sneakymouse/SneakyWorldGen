@@ -72,10 +72,7 @@
       "minecraft:disk_gravel"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/trees/bamboo_clearings",

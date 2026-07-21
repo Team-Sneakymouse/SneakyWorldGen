@@ -78,10 +78,7 @@
       "minecraft:disk_clay"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/hanging_moss",

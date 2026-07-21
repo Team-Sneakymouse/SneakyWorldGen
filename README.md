@@ -25,6 +25,7 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 
 **In pack now**
 - Structures: no villages / mineshafts / trial chambers; denser ancient cities in deep dark
+- No water/lava cliff springs (`spring_water` / `spring_lava`)
 - Caves: large cheese **pockets** only (no spaghetti/noodle/carver snakes), ~3× wider than vanilla cheese scale. Mid-depth = lush/dripstone/sulfur; deep band depth `[0.8, 1.2]` = deep dark
 - Biomes: beach/snowy beach/stony shore continentalness narrowed (less inland paint); ice spikes inland-only (no coastal niches)
 - Noise: `sneakyworldgen:adventure` (amplified peaks; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)

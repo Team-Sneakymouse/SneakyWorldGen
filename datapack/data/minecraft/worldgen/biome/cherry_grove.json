@@ -77,10 +77,7 @@
     [
       "minecraft:ore_infested"
     ],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
       "sneakyworldgen:adventure/vegetation/cherry_flowers_dense",

@@ -73,10 +73,7 @@
     [
       "minecraft:ore_infested"
     ],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen"
     ],

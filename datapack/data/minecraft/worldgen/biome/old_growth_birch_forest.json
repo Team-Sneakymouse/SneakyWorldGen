@@ -4,29 +4,22 @@
       "default": {
         "max_delay": 24000,
         "min_delay": 12000,
-        "sound": "minecraft:music.overworld.jagged_peaks"
+        "sound": "minecraft:music.overworld.forest"
       }
     },
-    "minecraft:gameplay/increased_fire_burnout": true,
-    "minecraft:visual/sky_color": "#8aa0c8"
+    "minecraft:visual/sky_color": "#7aa5ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.9,
+  "downfall": 0.6,
   "effects": {
-    "water_color": "#3f76e4",
-    "grass_color": "#8f9a6a"
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "sneakyworldgen:adventure/terrain/peak_cliffs",
-      "sneakyworldgen:adventure/terrain/scree",
-      "sneakyworldgen:adventure/terrain/andesite_recolor",
-      "sneakyworldgen:adventure/terrain/powder_snow_pocket"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -69,20 +62,26 @@
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "minecraft:ore_emerald"
-    ],
-    [
-      "minecraft:ore_infested"
+      "minecraft:disk_gravel"
     ],
     [],
+    [],
     [
-      "minecraft:glow_lichen"
+      "minecraft:glow_lichen",
+      "minecraft:forest_flowers",
+      "minecraft:wildflowers_birch_forest",
+      "minecraft:birch_tall",
+      "minecraft:patch_bush",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_forest",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "sneakyworldgen:adventure/terrain/shadow_snow",
-      "sneakyworldgen:adventure/terrain/de_snowify"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -99,10 +98,28 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:goat",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 5
+        "type": "minecraft:sheep",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "minecraft:pig",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:cow",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 8
       }
     ],
     "misc": [],
@@ -167,5 +184,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.7
+  "temperature": 0.6
 }

@@ -73,10 +73,7 @@
       "minecraft:disk_gravel"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
       "minecraft:dark_forest_vegetation",
