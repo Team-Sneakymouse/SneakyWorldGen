@@ -103,7 +103,7 @@
                                         "type": "minecraft:noise",
                                         "noise": "minecraft:cave_layer",
                                         "xz_scale": 0.3333333333333333,
-                                        "y_scale": 8.0
+                                        "y_scale": 4.0
                                       }
                                     }
                                   },
@@ -118,7 +118,7 @@
                                           "type": "minecraft:noise",
                                           "noise": "minecraft:cave_cheese",
                                           "xz_scale": 0.3333333333333333,
-                                          "y_scale": 0.6666666666666666
+                                          "y_scale": 0.3333333333333333
                                         }
                                       },
                                       "max": 1.0,
