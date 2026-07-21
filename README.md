@@ -17,7 +17,7 @@ Custom noise settings, single biome, grass surface. Tuned for building, not expl
 
 ### Adventure
 
-Custom **amplified-based** terrain (`sneakyworldgen:adventure` noise settings) with taller peaks, deeper valleys, and extra jaggedness — plus a **whitelisted** multi-noise biome set: green lowlands, highlands/peaks, jungles, savannas, rivers/coasts, warm ocean, and all cave biomes (including sulfur caves). Lifeless biomes (deserts, badlands, most other oceans, plains/forest fillers, etc.) are removed so climate niches fill from nearby kept biomes.
+Custom **amplified-leaning** terrain (`sneakyworldgen:adventure` noise settings) — density splines blended halfway toward default overworld so peaks stay dramatic without the wildest outliers — plus a **whitelisted** multi-noise biome set: green lowlands, highlands/peaks, jungles, savannas, rivers/coasts, warm ocean, and all cave biomes (including sulfur caves). Lifeless biomes (deserts, badlands, most other oceans, plains/forest fillers, etc.) are removed so climate niches fill from nearby kept biomes.
 
 Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json`](datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.json)
 
@@ -28,7 +28,7 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - No water/lava cliff springs (`spring_water` / `spring_lava`)
 - Caves: large cheese **pockets** only (no spaghetti/noodle/carver snakes), ~3× wider than vanilla cheese scale. Mid-depth = lush/dripstone/sulfur; deep band depth `[0.8, 1.2]` = deep dark
 - Biomes: beach/snowy beach/stony shore continentalness narrowed (less inland paint); ice spikes inland-only (no coastal niches)
-- Noise: `sneakyworldgen:adventure` (amplified peaks; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)
+- Noise: `sneakyworldgen:adventure` (terrain midway between amplified and default overworld; calm coasts/wetlands — swamp/mangrove pinned to coastal continentalness, flat sea-level offset)
 - Terrain features: stone/peak/shore cliffs, scree, river-bank carve, ruined roads (`sneakyworldgen:adventure/terrain/*`)
 - Highland andesite recolor; peak de-snowify + lee-side shadow snow
 - Moss floor + dense fern understory + rainforest vines (OGT, jungle, dark forest)
