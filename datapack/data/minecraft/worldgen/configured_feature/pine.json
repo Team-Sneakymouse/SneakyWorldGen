@@ -23,22 +23,14 @@
     },
     "decorators": [],
     "foliage_placer": {
-      "type": "minecraft:spruce_foliage_placer",
-      "radius": {
+      "type": "minecraft:pine_foliage_placer",
+      "height": {
         "type": "minecraft:uniform",
-        "min_inclusive": 2,
-        "max_inclusive": 3
+        "min_inclusive": 4,
+        "max_inclusive": 5
       },
-      "offset": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 0,
-        "max_inclusive": 1
-      },
-      "trunk_height": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 1,
-        "max_inclusive": 2
-      }
+      "offset": 1,
+      "radius": 2
     },
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
@@ -59,9 +51,9 @@
     },
     "trunk_placer": {
       "type": "minecraft:straight_trunk_placer",
-      "base_height": 9,
-      "height_rand_a": 2,
-      "height_rand_b": 1
+      "base_height": 11,
+      "height_rand_a": 4,
+      "height_rand_b": 0
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",

@@ -49,15 +49,15 @@
     },
     "trunk_placer": {
       "type": "minecraft:mega_jungle_trunk_placer",
-      "base_height": 16,
-      "height_rand_a": 4,
+      "base_height": 22,
+      "height_rand_a": 5,
       "height_rand_b": 24
     },
     "foliage_placer": {
       "type": "minecraft:jungle_foliage_placer",
-      "radius": 2,
+      "radius": 3,
       "offset": 0,
-      "height": 2
+      "height": 3
     },
     "decorators": [
       { "type": "minecraft:trunk_vine" },

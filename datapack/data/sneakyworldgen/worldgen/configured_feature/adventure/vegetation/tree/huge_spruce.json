@@ -49,18 +49,18 @@
     },
     "trunk_placer": {
       "type": "minecraft:giant_trunk_placer",
-      "base_height": 22,
-      "height_rand_a": 4,
-      "height_rand_b": 18
+      "base_height": 30,
+      "height_rand_a": 5,
+      "height_rand_b": 20
     },
     "foliage_placer": {
       "type": "minecraft:mega_pine_foliage_placer",
-      "radius": 0,
+      "radius": 1,
       "offset": 0,
       "crown_height": {
         "type": "minecraft:uniform",
-        "min_inclusive": 16,
-        "max_inclusive": 24
+        "min_inclusive": 14,
+        "max_inclusive": 18
       }
     },
     "decorators": [

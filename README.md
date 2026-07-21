@@ -45,7 +45,7 @@ Biome whitelist: [`datapack/data/sneakyworldgen/tags/worldgen/biome/adventure.js
 - Grove coarse/scree spread; powder-snow pockets (peaks, grove, snowy taiga/beach)
 - Warm ocean seafloor rocks + denser coral; floating lilies on wetlands/rivers/tarns
 - Taiga/meadow/OGT gravel flats; cherry pool densify; beach shore cliffs
-- Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees
+- Trees: huge spruce/pine for old-growth taiga; denser jungle canopy with huge jungle trees; common + custom trees scaled for ≥5-block clear trunks + proportional crowns (vanilla spruce/oak/pine/etc. overridden)
 - Biome overrides (feature wiring + sky/foliage/water polish)
 
 ## Install
