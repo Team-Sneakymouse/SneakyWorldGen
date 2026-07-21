@@ -1,8 +1,8 @@
 {
   "feature": {
-    "type": "minecraft:simple_block",
+    "type": "minecraft:disk",
     "config": {
-      "to_place": {
+      "state_provider": {
         "type": "minecraft:weighted_state_provider",
         "entries": [
           {
@@ -15,26 +15,41 @@
           },
           {
             "weight": 1,
-            "data": {
-              "Name": "minecraft:stone_slab",
-              "Properties": {
-                "type": "bottom",
-                "waterlogged": "false"
-              }
-            }
+            "data": { "Name": "minecraft:mossy_cobblestone" }
           },
           {
             "weight": 1,
-            "data": { "Name": "minecraft:mossy_cobblestone" }
+            "data": { "Name": "minecraft:coarse_dirt" }
           }
         ]
-      }
+      },
+      "target": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:grass_block",
+          "minecraft:dirt",
+          "minecraft:coarse_dirt",
+          "minecraft:podzol",
+          "minecraft:rooted_dirt",
+          "minecraft:moss_block",
+          "minecraft:mud",
+          "minecraft:packed_mud",
+          "minecraft:mycelium",
+          "minecraft:snow_block"
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      },
+      "half_height": 0
     }
   },
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 96
+      "count": 160
     },
     {
       "type": "minecraft:in_square"
@@ -42,14 +57,14 @@
     {
       "type": "minecraft:noise_based_count",
       "noise_to_count_ratio": 1,
-      "noise_factor": 220,
-      "noise_offset": 0.04
+      "noise_factor": 180,
+      "noise_offset": 0.08
     },
     {
       "type": "minecraft:noise_based_count",
       "noise_to_count_ratio": -1,
-      "noise_factor": 220,
-      "noise_offset": -0.04
+      "noise_factor": 180,
+      "noise_offset": -0.08
     },
     {
       "type": "minecraft:heightmap",
@@ -66,13 +81,24 @@
               "minecraft:grass_block",
               "minecraft:dirt",
               "minecraft:coarse_dirt",
-              "minecraft:podzol"
+              "minecraft:podzol",
+              "minecraft:rooted_dirt",
+              "minecraft:moss_block",
+              "minecraft:mud",
+              "minecraft:packed_mud",
+              "minecraft:mycelium",
+              "minecraft:snow_block"
             ]
           },
           {
             "type": "minecraft:matching_blocks",
             "offset": [0, 1, 0],
-            "blocks": ["minecraft:air", "minecraft:short_grass", "minecraft:fern"]
+            "blocks": [
+              "minecraft:air",
+              "minecraft:short_grass",
+              "minecraft:fern",
+              "minecraft:snow"
+            ]
           }
         ]
       }
