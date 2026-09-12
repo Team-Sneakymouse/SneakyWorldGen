@@ -78,6 +78,27 @@ for entry in "$WORLD_DIR"/*; do
 done
 shopt -u dotglob nullglob
 
+# Chunky stores pregen progress under plugins/, not the world folder.
+# Reset so a wiped world does not resume a stale concentric cursor.
+CHUNKY_TASK="$RUN_DIR/plugins/Chunky/tasks/world.properties"
+if [[ -f "$CHUNKY_TASK" ]]; then
+  echo "Resetting Chunky task progress (keeping radius/shape)..."
+  # Preserve radius if already configured; default to 500 for quick test runs.
+  RADIUS="$(awk -F= '/^radius=/{print $2; exit}' "$CHUNKY_TASK" 2>/dev/null || true)"
+  RADIUS="${RADIUS:-500.0}"
+  cat > "$CHUNKY_TASK" <<EOF
+world=world
+cancelled=false
+center-x=0.0
+center-z=0.0
+radius=${RADIUS}
+shape=square
+pattern=concentric
+chunks=0
+time=0
+EOF
+fi
+
 echo "Configuring level-type=$LEVEL_TYPE"
 PROPS="$RUN_DIR/server.properties"
 if [[ ! -f "$PROPS" ]]; then

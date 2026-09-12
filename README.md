@@ -79,6 +79,8 @@ VS Code / Cursor tasks (`.vscode/tasks.json`):
 
 The script stops any running Paper process, zips `datapack/` into `run/world/datapacks/SneakyWorldGen.zip`, deletes everything under `run/world/` except `datapacks/`, sets `level-type`, then starts the server with `--nogui`.
 
+**Chunky pregen:** `run/plugins/Chunky/config.yml` has `continue-on-restart: true`, and `run/plugins/Chunky/tasks/world.properties` defines a square pregen around spawn (default test radius **500**). On startup Chunky resumes that task automatically. `test.sh` resets Chunky `chunks`/`time` whenever it wipes the world so progress does not stick to a fresh map. Change `radius` in the task file to widen/narrow it.
+
 ## Releases
 
 Pushing to `main` runs [`.github/workflows/publish-datapack.yml`](.github/workflows/publish-datapack.yml): zips the datapack and updates the rolling **Latest datapack** release (`latest` tag).
