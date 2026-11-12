@@ -35,7 +35,9 @@ Worldgen lives under `data/<namespace>/worldgen/`:
 | `biome/` | Biomes, features, carvers, spawns |
 | `configured_feature/`, `placed_feature/` | Feature defs + placement |
 | `structure/`, `structure_set/`, `template_pool/` | Structures |
-| `world_preset/`, `dimension_type/` | World/dimension setup |
+| `world_preset/` | World setup |
+
+Dimension types live outside `worldgen/`, at `data/<namespace>/dimension_type/`.
 
 Prefer **world presets** over loose `dimension/` files (still supported, but presets are current).
 
